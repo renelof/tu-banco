@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Banca en línea/ATM</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="topPanel">
+    <ul>
+    <li><a href="#">Ejecutivos</a></li>
+    <li><a href="#">Cajero ATM</a></li>
+    <li class="active">BancaOnline</li>
+    </ul>
+        <a href="index.html"><img src="images/banco.png" border="0" /></a><div><h2 class="headerOrange">Banca en línea/ATM</h2></div>
+</div><!--end  topPanel -->
+<div id="bodyPanel">
+
+	<div id="mainPanel" style="height:400px; overflow:auto">
+
+    <div id="member">
+      <h2>BancaOnline Login</h2>
+      <form id="bancaonline_log_in" name="bancaonline_log_in" method="post" action="#">
+        <table>
+        <tr>
+        <td>       
+        <label>Numero de tarjeta:</label>
+                <input type="text" title="Son los 16 digitos de tu tarjeta" class="txtBox" name="tarjeta" id="tarjeta" maxlength="16"/>
+                <label>NIP:</label>
+                <input type="password" title="Clave" class="txtBox" name="nip" id="nip" maxlength="4"/>
+                <a>Enviar&nbsp;</a>
+                <input type="submit" name="go" value="" class="go"/>
+                <br class="spacer"/>
+        </td>
+        </tr>
+        <tr><td><span style="color:red; display:none">error</span></td></tr>
+        </table>
+      </form>
+      <br class="spacer"/>
+    </div>
+
+    </div>
+	<!-- footer -->
+	<div id="footerPanel">
+		<div id="footerbodyPanel">
+			<br/><p class="copyright">© Banca en Linea/ATM all right reaserved</p>
+		</div>
+	</div><!-- end footerPanel -->
+    
+</div><!-- end bodyPanel -->
+</body>
+</html>
